@@ -1,0 +1,18 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="sortable-item.html">
+<polymer-element name="sortable-list" attributes="data">
+  <template>
+    <style>
+      :host {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+    <template repeat="{{obj in data}}">
+      <sortable-item data="{{obj}}"></sortable-item>
+    </template>
+  </template>
+  <script type="application/dart" src="sortable-list.dart"></script>
+</polymer-element>
+

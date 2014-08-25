@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample app</title>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    <!-- import the click-counter -->
+    <link rel="import" href="sortable-list/sortable-list.html">
+    
+    <link rel="stylesheet" href="sortable_list.css">
+  </head>
+  <body>
+    <h1>Sortable list</h1>
+    
+    <p>Hello world from Dart!</p>
+    
+    <div id="sample_container_id">
+      <sortable-list id="list1"></sortable-list>
+    </div>
+    <button id="but_add">Add new</button>
+    <button id="but_remove">Remove Last</button>
+    <button id="but_change">Change</button>
+    <button id="but_rearrange">Rearrange</button>
+    
+
+    <script type="application/dart" src="sortable_list.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

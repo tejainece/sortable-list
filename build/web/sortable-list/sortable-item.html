@@ -1,0 +1,16 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="sortable-item" attributes="label">
+  <template>
+    <style>
+      :host {
+        width: 20px; /* TODO: make it invisible attribute */
+        height: 100%;
+      }
+    </style>
+    <div>
+      <span>{{label}}</span>
+    </div>
+  </template>
+  <script type="application/dart" src="sortable-item.dart"></script>
+</polymer-element>
+
